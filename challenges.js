@@ -84,6 +84,12 @@ const isAdult = (age) => {
 
 // ✍️ Stretch: solve it here ✍️
 
+function getInitials(firstName, LastName) {
+   const firstInitial = firstName.charAt(0).toUpperCase();
+   const lastInitial = LastName.charAt(0).toUpperCase();
+   return firstInitial + "." + lastInitial + ".";  
+}
+
 
 /* ============================================================
    👇 TEST CODE — DO NOT EDIT 👇
@@ -108,3 +114,6 @@ console.log(isAdult(20));  // → true
 console.log(isAdult(15));  // → false
 console.log(isAdult(18));  // → true
 
+console.log("\n=== Stretch: getInitials ===");
+console.log(getInitials("Fatuma", "Ali"));
+console.log(getInitials("Asha", "Mohamed"));
